@@ -1,6 +1,6 @@
 body {
     font-family: 'Roboto', sans-serif;
-    width: 2050px;
+   /*  width: 2050px; */
     
     margin: 0 auto;
     background-color: #ffffff;
@@ -22,14 +22,18 @@ img {
     
 }
 
+h2 {margin: 0px;
+padding: 0px;}
+
 .main_header {
     position: relative;
-    width: 2050px;
+    background-color: #333333;
 }
 
 .black-navigation {
+    margin: 0 auto;
     height: 46px;
-    background-color: #333333;
+    width: 2050px;
     color: #777777;
 }
 
@@ -49,7 +53,6 @@ img {
 
 .black-navigation_container a {
     color: #999999;
-   
     padding: 15px 20px;
 }
 
@@ -59,8 +62,8 @@ img {
 
 
 .navigation-container {
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
+    
     width: 1770px;
     
     display: flex;
@@ -70,6 +73,9 @@ img {
   /*   margin-left: 35px; */
 
     position: absolute;
+    left: 50%;
+    margin-left: -885px;
+    
 }
 
 .main_navigation {
@@ -93,16 +99,20 @@ img {
 }
 
 
-.main_main {
-    width: 2050px;
+.background_image_container{
+    
+    
+    background-color: #f8f8f8;
 }
 
 
 .background-image {
+    margin: 0 auto;
     background-image: url(../img/background_image.jpg);
     background-repeat: no-repeat;
     width: 2050px;
     height: 920px;
+    
     
 }
 
@@ -119,12 +129,136 @@ img {
     background-color: transparent;
 }
 
+.main_offers {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+.main_offers_container {
+    width: 2050px;
+    margin: 0 auto;
+}
+
+.lookbook {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+.lookbook_container {
+    width: 2050px;
+    margin: 0 auto;
+    margin-bottom: 125px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.lookbook h2 {
+    text-align: right;
+}
+
+.lookbook p {
+    text-align: right;
+    white-space: normal;
+
+}
+
+.mens_lookbook {
+    width: 665px;
+    height: 530px;
+    background-color: #f8f8f8;
+    background-image: url(../img/look_book_men.jpg.png);
+    background-repeat: no-repeat;
+}
+
+.womens_lookbook {
+    width: 665px;
+    height: 530px;
+    background-color: #f8f8f8;
+}
+
+.your_lookbook {
+    width: 665px;
+    height: 530px;
+    background-color: #f8f8f8;
+}
 
 
+.show_room {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+.show_room_container {
+    width: 1770px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.picture {
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.picture:nth-child(3n) {
+    margin-right: 0px;
+}
+
+
+.picture_1 {
+    width: 420px;
+    height: 500px;
+    background-image: url(../img/picture_1.jpg);
+    background-repeat: no-repeat;
+    float: left;
+}
+
+.picture_2 {
+    width: 420px;
+    height: 500px;
+    background-image: url(../img/picture_2.jpg);
+    background-repeat: no-repeat;
+    float: left;
+}
+
+.picture_3 {
+    width: 870px;
+    height: 704px;
+    background-image: url(../img/picture_3.jpg);
+    background-repeat: no-repeat;
+    float: right;
+}
+.picture_4 {
+    width: 870px;
+    height: 704px;
+    background-image: url(../img/picture_4.jpg);
+    background-repeat: no-repeat;
+    float: left;
+}
+
+.picture_5 {
+    width: 420px;
+    height: 500px;
+    background-image: url(../img/picture_5.jpg);
+    background-repeat: no-repeat;
+    float: left;
+}
+
+.picture_6 {
+    width: 420px;
+    height: 500px;
+    background-image: url(../img/picture_6.jpg);
+    background-repeat: no-repeat;
+    float: right;
+}
 
 
 .main_footer {
     background-color: #f8f8f8;
+    
     
 
     
