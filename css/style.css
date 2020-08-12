@@ -10,7 +10,10 @@ a {
     text-decoration: none;
     color: #222222;
 }
-
+ul {
+    margin: 0;
+    padding: 0;
+}
 li {
     list-style: none;
     margin: 0;
@@ -22,7 +25,8 @@ img {
     
 }
 
-h2 {margin: 0px;
+h2,
+h3 {margin: 0px;
 padding: 0px;}
 
 .main_header {
@@ -68,10 +72,7 @@ padding: 0px;}
     
     display: flex;
     justify-content: space-between;
-  /*   align-items: center; */
     margin-top: 45px;
-  /*   margin-left: 35px; */
-
     position: absolute;
     left: 50%;
     margin-left: -885px;
@@ -83,19 +84,196 @@ padding: 0px;}
     margin: 0;
     padding: 0;
     margin-left: 50%;
-    
-   
-/*     margin: 0 auto; */
-
     display: flex;
     justify-content: space-between;
-    
-    border: 1px solid yellow;
+    position: relative;
 }
 
 
+.main_navigation > li:hover  a {
+    color: #32d2d2;
+}
+
+.mens_menu {
+    position: relative;
+}
+
+.mens_menu::before,
+.mens_menu::after {
+    content: "";
+    width: 7px;
+    height: 2px;
+    background-color: #222222;
+
+    position: absolute;
+    top: 30px;
+    left: 0px;
+}
+.mens_menu::before {
+    transform: rotate(-45deg);
+    left: 4px;
+}
+.mens_menu::after {
+    transform: rotate(45deg);
+   
+}
+
+.main_navigation > li:hover .mens_menu::before,
+.main_navigation > li:hover .mens_menu::after {
+    background-color: #32d2d2;
+}
+
 .mens_dropdown_menu {
     display: none;
+}
+
+
+
+.main_navigation > li:hover .mens_dropdown_menu {
+    
+    width: 467px;
+    height: 527px;
+    box-sizing: border-box;
+    padding: 35px 30px;
+
+    background-color: #ffffff;
+    box-shadow: 0px 17px 24px 0px rgba(0, 0, 0, 0.14);
+     
+    
+    position: absolute;
+    top: 50px;
+    display: flex;
+    flex-direction: column;
+
+    
+    
+}
+
+.mens_dropdown_menu_container {
+    display: flex;
+    margin-bottom: 35px;
+}
+
+.mens_dropdown_menu_casuals,
+.mens_dropdown_menu_formal {
+    width: 205px;
+}
+
+.mens_dropdown_menu_casuals h3,
+.mens_dropdown_menu_formal h3 {
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.mens_dropdown_menu_casuals a,
+.mens_dropdown_menu_formal a {
+    display: block;
+    padding: 5px 5px;
+  
+}
+
+.black_sale_window {
+    width: 407px;
+    height: 200px;
+    background-color: #333333;
+}
+
+.black_sale_window_text {
+    padding: 55px 50px;
+    
+}
+
+.black_sale_window p {
+    font-size: 36px;
+    line-height: 41px;
+   
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;    
+}
+
+.black_sale_window p:first-child {
+    font-weight: bold;
+}
+
+.black_sale_window p:last-child {
+    font-weight: lighter;
+}
+
+.womens_menu {
+    position: relative;
+}
+
+.womens_menu::before,
+.womens_menu::after {
+    content: "";
+    width: 7px;
+    height: 2px;
+    background-color: #222222;
+
+    position: absolute;
+    top: 30px;
+    left: 0px;
+}
+.womens_menu::before {
+    transform: rotate(-45deg);
+    left: 4px;
+}
+.womens_menu::after {
+    transform: rotate(45deg);
+   
+}
+
+
+.local_stores_menu {
+    position: relative;
+}
+
+.local_stores_menu::before,
+.local_stores_menu::after {
+    content: "";
+    width: 7px;
+    height: 2px;
+    background-color: #222222;
+
+    position: absolute;
+    top: 30px;
+    left: 0px;
+}
+.local_stores_menu::before {
+    transform: rotate(-45deg);
+    left: 4px;
+}
+.local_stores_menu::after {
+    transform: rotate(45deg);
+   
+}
+
+
+.look_book_menu {
+    position: relative;
+}
+
+.look_book_menu::before,
+.look_book_menu::after {
+    content: "";
+    width: 7px;
+    height: 2px;
+    background-color: #222222;
+
+    position: absolute;
+    top: 30px;
+    left: 0px;
+}
+.look_book_menu::before {
+    transform: rotate(-45deg);
+    left: 4px;
+}
+.look_book_menu::after {
+    transform: rotate(45deg);
+   
 }
 
 
@@ -103,6 +281,8 @@ padding: 0px;}
     
     
     background-color: #f8f8f8;
+    position: relative;
+    z-index: -2;
 }
 
 
@@ -112,6 +292,8 @@ padding: 0px;}
     background-repeat: no-repeat;
     width: 2050px;
     height: 920px;
+    position: relative;
+    z-index: -1;
     
     
 }
@@ -127,6 +309,8 @@ padding: 0px;}
     color: #454647;
     border: 2px solid #454647;
     background-color: transparent;
+
+   
 }
 
 .main_offers {
@@ -140,13 +324,122 @@ padding: 0px;}
     margin: 0 auto;
 }
 
-.lookbook {
+
+
+.show_room {
     margin: 0;
     padding: 0;
     background-color: #ffffff;
 }
 
+.show_room_container {
+    width: 1770px;
+    height: 1265px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.picture {
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.picture:nth-child(3n) {
+    margin-right: 0px;
+}
+
+
+.picture_1 {
+    width: 420px;
+    height: 500px;
+    background-image: url(../img/picture_1.jpg);
+    background-repeat: no-repeat;
+    
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.picture_2 {
+    width: 420px;
+    height: 500px;
+    background-image: url(../img/picture_2.jpg);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0px;
+    left: 450px;
+   
+}
+
+.picture_3 {
+    width: 870px;
+    height: 704px;
+    background-image: url(../img/picture_3.jpg);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    
+}
+.picture_4 {
+    width: 870px;
+    height: 704px;
+    background-image: url(../img/picture_4.jpg);
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+   
+}
+
+.picture_5 {
+    width: 420px;
+    height: 500px;
+    background-image: url(../img/picture_5.jpg);
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0px;
+    right: 420px;
+   
+}
+
+.picture_6 {
+    width: 420px;
+    height: 500px;
+    background-image: url(../img/picture_6.jpg);
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+.picture:hover {
+    
+    box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.14);
+    
+    border-bottom: 150px solid #ffffff;
+    z-index: 10;
+} 
+
+.picture:hover:nth-child(n+4) {
+    transform:  translateY(150px);s
+}
+
+
+.lookbook {
+    position: relative;
+    z-index: -1;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    
+}
+
 .lookbook_container {
+    position: relative;
+    z-index: -1;
+
     width: 2050px;
     margin: 0 auto;
     margin-bottom: 125px;
@@ -171,89 +464,28 @@ padding: 0px;}
     background-color: #f8f8f8;
     background-image: url(../img/look_book_men.jpg.png);
     background-repeat: no-repeat;
+    background-position: left bottom;
 }
 
 .womens_lookbook {
     width: 665px;
     height: 530px;
     background-color: #f8f8f8;
+    background-image: url(../img/look_book_women.png);
+    background-repeat: no-repeat;
+    background-position: left bottom;
 }
 
 .your_lookbook {
     width: 665px;
     height: 530px;
     background-color: #f8f8f8;
-}
-
-
-.show_room {
-    margin: 0;
-    padding: 0;
-    background-color: #ffffff;
-}
-
-.show_room_container {
-    width: 1770px;
-    margin: 0 auto;
-    overflow: hidden;
-}
-
-.picture {
-    margin-right: 30px;
-    margin-bottom: 30px;
-}
-
-.picture:nth-child(3n) {
-    margin-right: 0px;
-}
-
-
-.picture_1 {
-    width: 420px;
-    height: 500px;
-    background-image: url(../img/picture_1.jpg);
+    background-image: url(../img/look_book_your.jpg.png);
     background-repeat: no-repeat;
-    float: left;
+    background-position: left bottom;
 }
 
-.picture_2 {
-    width: 420px;
-    height: 500px;
-    background-image: url(../img/picture_2.jpg);
-    background-repeat: no-repeat;
-    float: left;
-}
 
-.picture_3 {
-    width: 870px;
-    height: 704px;
-    background-image: url(../img/picture_3.jpg);
-    background-repeat: no-repeat;
-    float: right;
-}
-.picture_4 {
-    width: 870px;
-    height: 704px;
-    background-image: url(../img/picture_4.jpg);
-    background-repeat: no-repeat;
-    float: left;
-}
-
-.picture_5 {
-    width: 420px;
-    height: 500px;
-    background-image: url(../img/picture_5.jpg);
-    background-repeat: no-repeat;
-    float: left;
-}
-
-.picture_6 {
-    width: 420px;
-    height: 500px;
-    background-image: url(../img/picture_6.jpg);
-    background-repeat: no-repeat;
-    float: right;
-}
 
 
 .main_footer {
