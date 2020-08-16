@@ -32,13 +32,15 @@ padding: 0px;}
 .main_header {
     position: relative;
     background-color: #333333;
+    
 }
 
 .black-navigation {
     margin: 0 auto;
-    height: 46px;
+    height: 48px;
     width: 2050px;
     color: #777777;
+    
 }
 
 .black-navigation_container{
@@ -48,6 +50,8 @@ padding: 0px;}
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    
 }
 
 .buttons_container {
@@ -57,7 +61,52 @@ padding: 0px;}
 
 .black-navigation_container a {
     color: #999999;
-    padding: 15px 20px;
+    padding: 15px 40px;
+}
+
+.buttons_container .shopping_cart {
+
+    padding-left: 65px;
+    padding-right: 40px;
+    background-color: #00c8c8;
+    color: #ffffff;
+
+    position: relative;
+}
+
+.shopping_cart::before,
+.shopping_cart::after {
+    content: "";
+    width: 5px;
+    height: 1px;
+    background-color: #ffffff;
+
+    position: absolute;
+   
+    top: 50%;
+    margin-top: -1px;
+    
+}
+
+.shopping_cart::before {
+    transform: rotate(-45deg);
+    right: 25px;
+}
+.shopping_cart::after {
+    transform: rotate(45deg);
+    right: 28px;
+}
+
+.shopping_cart_image {
+    background-image: url("../img/shopping_cart_icon.png");
+    width: 20px;
+    height: 17px;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 15%;
+    
+   
+    
 }
 
 .navigation-container a {
@@ -67,15 +116,18 @@ padding: 0px;}
 
 .navigation-container {
     margin: 0 auto;
+    box-sizing: border-box;
     
-    width: 1770px;
+    width: 2050px;
     
     display: flex;
     justify-content: space-between;
     margin-top: 45px;
     position: absolute;
     left: 50%;
-    margin-left: -885px;
+    margin-left: -1025px;
+    padding-right: 135px;
+    padding-left: 135px;
     
 }
 
@@ -456,6 +508,34 @@ padding: 0px;}
 .look_book_menu::after {
     transform: rotate(45deg);
    
+}
+
+
+.search_form{
+    position: relative;
+}
+.search_form_input { 
+    font-size: 13px;
+    line-height: 27px;
+    font-weight: lighter;
+    color: #989898;
+    background-color: #f8f8f8;
+    border: 1px solid #e7e7e7;
+    padding-right: 30px;
+
+    position: relative;
+
+}
+
+.search_form::after {
+    content: "";
+    width: 13px;
+    height: 15px;
+    background-image: url("../img/search_form_loupe.png");
+    background-size: 13px 15px;
+    position: absolute;
+    right: 0px;
+    top: 50%;
 }
 
 
