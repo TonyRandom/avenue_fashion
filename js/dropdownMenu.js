@@ -17,15 +17,15 @@ mensMenu.addEventListener("click", function (evt) {
     }); 
 
 
-    womensMenu.addEventListener("click", function (evt) {
-        evt.preventDefault();
+womensMenu.addEventListener("click", function (evt) {
+    evt.preventDefault();
         
-        localStoresDropDown.classList.remove("local_stores_dropdown_menu_show");
-            menDropDown.classList.remove("mens_dropdown_menu_show");
-            womenDropDown.classList.toggle("womens_dropdown_menu_show");
+    localStoresDropDown.classList.remove("local_stores_dropdown_menu_show");
+    menDropDown.classList.remove("mens_dropdown_menu_show");
+    womenDropDown.classList.toggle("womens_dropdown_menu_show");
      
         
-        }); 
+    }); 
 
 
 localStoresMenu.addEventListener("click", function (evt) {
@@ -33,7 +33,7 @@ localStoresMenu.addEventListener("click", function (evt) {
     menDropDown.classList.remove("mens_dropdown_menu_show");
     womensMenu.classList.remove("womens_dropdown_menu_show");
     localStoresDropDown.classList.toggle("local_stores_dropdown_menu_show");
-            }); 
+        }); 
 
 
 

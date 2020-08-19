@@ -68,18 +68,21 @@ padding: 0px;}
 
     padding-left: 65px;
     padding-right: 40px;
-    background-color: #00c8c8;
-    color: #ffffff;
+    background-color: #333333;
+    color: #999999;
 
     position: relative;
 }
+
+
+
 
 .shopping_cart::before,
 .shopping_cart::after {
     content: "";
     width: 5px;
     height: 1px;
-    background-color: #ffffff;
+    background-color: #999999;
 
     position: absolute;
    
@@ -96,6 +99,14 @@ padding: 0px;}
     transform: rotate(45deg);
     right: 28px;
 }
+.shopping_cart:hover .shopping_cart::before,
+.shopping_cart:hover .shopping_cart::after {
+    background-color: #ffffff;
+}
+
+.shopping_cart:hover {
+    background-color: #00c8c8;
+    color: #ffffff; }
 
 .shopping_cart_image {
     background-image: url("../img/shopping_cart_icon.png");
@@ -540,16 +551,19 @@ padding: 0px;}
 
 
 .background_image_container{
+    width: 2050px;
+    margin: 0 auto;
     
-    
-    background-color: #f8f8f8;
+    background-color: #ffffff;
     position: relative;
     z-index: -2;
+    
+    padding-bottom: 60px;
+    border-bottom: 1px solid #eeeeee;
 }
 
 
 .background-image {
-    margin: 0 auto;
     background-image: url(../img/background_image.jpg);
     background-repeat: no-repeat;
     width: 2050px;
@@ -582,16 +596,44 @@ padding: 0px;}
 }
 
 .main_offers_container {
-    width: 2050px;
+    width: 1770px;
     margin: 0 auto;
+
+    
 }
 
+.main_offers_filter {
+    display: flex;
+}
 
+.main_offers_filter li {
+    padding: 55px 20px;
+
+    
+ 
+}
+
+.main_offers_filter li:first-child {
+    padding-left: 0px;
+}
+
+.main_offers_filter a {
+    font-size: 13px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #727272;
+}
 
 .show_room {
     margin: 0;
     padding: 0;
     background-color: #ffffff;
+    
+    position: relative;
+    z-index: 1;
+
+    padding-bottom: 60px;
+    border-bottom: 1px solid #eeeeee;
 }
 
 .show_room_container {
@@ -600,6 +642,8 @@ padding: 0px;}
     margin: 0 auto;
     overflow: hidden;
     position: relative;
+
+    
 }
 
 .picture {
@@ -691,7 +735,7 @@ padding: 0px;}
 
 .lookbook {
     position: relative;
-    z-index: -1;
+    z-index: -999;
     margin: 0;
     padding: 0;
     background-color: #ffffff;
@@ -700,7 +744,7 @@ padding: 0px;}
 
 .lookbook_container {
     position: relative;
-    z-index: -1;
+    z-index: -2;
 
     width: 2050px;
     margin: 0 auto;
@@ -721,12 +765,36 @@ padding: 0px;}
 }
 
 .mens_lookbook {
+    position: relative;
+
     width: 665px;
     height: 530px;
     background-color: #f8f8f8;
     background-image: url(../img/look_book_men.jpg.png);
     background-repeat: no-repeat;
     background-position: left bottom;
+}
+
+.your_lookbook_button,
+.womens_lookbook_button,
+.mens_lookbook_button {
+    position: absolute;
+    right: 40px;
+    bottom: 142px;
+   
+
+    padding: 20px 30px;
+    border: 2px solid #737373;
+
+    color: #454647;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.mens_lookbook_button:hover {
+    color: #ffffff;
+    background-color: #00c8c8;
+    border: 2px solid #00c8c8;
 }
 
 .womens_lookbook {
