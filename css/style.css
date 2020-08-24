@@ -593,6 +593,7 @@ padding: 0px;}
 }
 
 .background_image_button {
+    display: block;
     position: absolute;
     right: 322px;
     top: 739px;
@@ -803,6 +804,7 @@ padding: 0px;}
 .your_lookbook_button,
 .womens_lookbook_button,
 .mens_lookbook_button {
+    display: block;
     position: absolute;
     right: 40px;
     bottom: 142px;
@@ -1234,6 +1236,7 @@ float: right;
     width: 1172px;
     margin: 0 auto;
     margin-bottom: 125px;
+    padding-top: 60px;
 
     display: flex;
     justify-content: space-between;
@@ -1271,8 +1274,11 @@ p.local_stores_text_subtitle {
 }
 
 .local_stores_cities_button {
-    padding: 20px 30px;
+    display: block;
+    width: 110px;
     margin-top: 50px;
+    padding: 20px 30px;
+    
     border: 2px solid #737373;
 
     color: #454647;
@@ -1280,7 +1286,206 @@ p.local_stores_text_subtitle {
     text-transform: uppercase;
 }
 
+.local_stores_cities_button:hover {
+    color: #ffffff;
+    background-color: #00c8c8;
+    border: 1px solid #00c8c8;
+}
 
+.location_details {
+    background-color: #f8f8f8;
+    margin-bottom: 125px;
+}
+
+.location_details_container {
+    width: 2050px;
+    margin: 0 auto;
+    display: flex;
+    
+}
+
+.location_map {
+    background-image: url("../img/location_map_london.png");
+    background-repeat: no-repeat;
+    max-width: 1387px;
+    max-height: 500px;
+    flex-grow: 3;
+   
+    
+}
+
+
+.location_address {
+   padding: 40px;
+   width: 653px;
+   box-sizing: border-box; 
+   flex-grow: 1;   
+}
+
+.location_address p,
+.location_address h2 {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 18px;
+}
+
+.location_address p {
+    font-size: 15px;
+    line-height: 22px;
+    color: #727272;
+}
+
+.location_address .local_stores_text_subtitle {
+    font-size: 13px;
+    line-height: 20px;
+    color: #727272;
+    text-transform: uppercase;
+}
+
+.location_address h2 {
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 20px;
+    color: #575153;
+    text-transform: uppercase;
+}
+
+.location_address .location_address_item {
+    margin-bottom: 0px;
+}
+
+.location_address > .location_address_item:last-of-type {
+    margin-bottom: 40px;
+}
+
+.location_address  .location_address_item {
+    font-size: 14px;
+    line-height: 32px;
+    font-weight: 100;
+    color: #8e8c8c;
+    padding-left: 25px;
+   
+    position: relative;
+}
+
+.location_address  .location_address_item:first-child {
+    padding-top: 32px;
+}
+
+
+
+.location_address .location_address_address::before {
+    content: "";
+    background-image: url(../img/location_address_icon.png);
+    width: 10px;
+    height: 17px;
+    background-repeat: no-repeat;
+    position: absolute;
+   
+    left: 0;
+    top: 25%;
+}
+
+
+.location_address .location_address_phone::before {
+    content: "";
+    background-image: url(../img/location_phone_icon.png);
+    width: 13px;
+    height: 14px;
+    background-repeat: no-repeat;
+    position: absolute;
+   
+    left: 0;
+    top: 25%;
+}
+
+
+.location_address .location_address_website::before {
+    content: "";
+    background-image: url(../img/location_website_icon.png);
+    width: 15px;
+    height: 14px;
+    background-repeat: no-repeat;
+    position: absolute;
+   
+    left: 0;
+    top: 25%;
+}
+
+
+.location_address .location_address_email::before {
+    content: "";
+    background-image: url(../img/location_email_icon.png);
+    width: 15px;
+    height: 13px;
+    background-repeat: no-repeat;
+    position: absolute;
+    
+    left: 0;
+    top: 25%;
+}
+
+
+.location_address .location_address_working_hours::before {
+    content: "";
+    background-image: url(../img/location_working_hours_icon.png);
+    width: 14px;
+    height: 15px;
+    background-repeat: no-repeat;
+    position: absolute;
+   
+    left: 0;
+    top: 25%;
+}
+
+.location_address_social_networks {
+    width: 163px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.location_address_social_networks_item {
+background-color: #727272;
+width: 30px;
+height: 30px;
+border-radius: 45px;
+}
+
+.location_address_facebook {
+   
+    background-image: url(../img/location_address_facebook.png);
+    background-size: 10px 18px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+
+}
+
+.location_address_twitter {
+   
+    background-image: url(../img/location_address_twitter.png);
+    background-size: 16px 14px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+
+}
+
+.location_address_instagram {
+   
+    background-image: url(../img/location_address_instagram.png);
+    background-size: 16px 17px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+
+}
+
+.location_address_pinterest {
+   
+    background-image: url(../img/location_address_pinterest.png);
+    background-size: 16px 17px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+
+}
 
 
 .visually_hidden {
