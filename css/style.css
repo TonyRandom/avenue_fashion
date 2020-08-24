@@ -196,6 +196,13 @@ padding: 0px;}
     color: #00c8c8;
 }
 
+/* В СЛУЧАЕ ЕСЛИ ЕСТЬ СТРЕЛОЧКА, НАДО ДОБАВИТЬ КЛАСС АКТИВНОЙ НАВИГАЦИИ ТАКЖЕ И В ЛИ, И ТОГДА ВСЕ ПОКРАСИТЬСЯ */
+
+.active_navigation.menu::before,
+.active_navigation.menu::after {
+    background-color: #00c8c8;
+}
+
 .main_navigation > li:hover > a,
 .main_navigation > li:active > a,
 .main_navigation > li:focus > a
@@ -1221,9 +1228,57 @@ float: right;
 
 
 
+/* LOCAL STORES */
+
+.local_stores_cities {
+    width: 1172px;
+    margin: 0 auto;
+    margin-bottom: 125px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.local_stores_cities_item h2 {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 28px;
+    font-size: 18px;
+    line-height: 20px;
+    color: #575153;
+    text-transform: uppercase;
+}
 
 
 
+.local_stores_cities_item p {
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+    line-height: 22px;
+    color: #8e8c8c;
+    
+}
+
+
+p.local_stores_text_subtitle {
+    margin-bottom: 20px;
+    font-size: 13px;
+    line-height: 20px;
+    color: #727272;
+    text-transform: uppercase;
+}
+
+.local_stores_cities_button {
+    padding: 20px 30px;
+    margin-top: 50px;
+    border: 2px solid #737373;
+
+    color: #454647;
+    font-size: 16px;
+    text-transform: uppercase;
+}
 
 
 
