@@ -1761,6 +1761,21 @@ border-radius: 45px;
 
 
 
+/* PRODUCT_VIEW */
+
+.item_description {
+    width: 1172px;
+    margin: 0 auto;
+
+}
+
+.item_description_photo {
+    background-image: url("../img/item_description_photo.jpg");
+    width: 570px;
+    height: 710px;
+
+}
+
 
 
 
