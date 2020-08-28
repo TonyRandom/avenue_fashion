@@ -2174,17 +2174,107 @@ border-radius: 45px;
 .sign_in_or_register {
     width: 1172px;
     margin: 0 auto;
+    margin-top: 60px;
 
     display: flex;
+    justify-content: space-between;
+
+    border: 1px solid red;
 }
 
-.sign_in_or_register input {
+.sign_in_or_register h2 {
+    margin-bottom: 30px;
+
+
+}
+
+.sign_in_or_register input:not([type="button"]) {
     display: block;
+    box-sizing: border-box;
+    width: 550px;
+    padding: 15px 0 15px 10px;
+    margin-bottom: 30px;
+}
+
+.sign_in,
+.register {
+    width: 550px;
+    
 }
 
 
 
 
+
+
+.register input[type="checkbox"] {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+   
+}
+
+.register input[type="checkbox"]:checked {
+    background-color: none
+    ;
+}
+
+.sign_up_checkbox {
+    position: relative;
+    padding-left: 40px;
+    border: 1px solid yellow;
+}
+
+.sign_up_checkbox::before {
+    position: absolute;
+    content: "";
+    width: 22px;
+    height: 22px;
+    border: 1px solid #e7e7e7;
+
+    left: 0;
+    top: 30%;
+}
+
+input[type="checkbox"]:checked + .sign_up_checkbox::after {
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 16px;
+    background-color: #e7e7e7;
+    border: 1px solid #e7e7e7;
+
+    left: 1%;
+    top: 32%;
+}
+
+
+.sign_up_checkbox {
+    position: relative;
+}
+
+
+
+
+
+
+
+
+.sign_in_or_register input[type="button"] {
+    display: block;
+    padding: 22px 32px;
+    background-color: #ffffff;
+    border-width: 0;
+    border: 1px solid black;
+
+    text-transform: uppercase;
+}
+
+.sign_in_or_register input[type="button"]:hover {
+    background-color: #00c8c8;
+    border-color: #00c8c8;
+    color: #ffffff;
+}
 
 
 .visually_hidden {
