@@ -2175,17 +2175,33 @@ border-radius: 45px;
     width: 1172px;
     margin: 0 auto;
     margin-top: 60px;
+    margin-bottom: 125px;
 
     display: flex;
     justify-content: space-between;
+}
 
-    border: 1px solid red;
+.sign_in,
+.register {
+    width: 550px;
+    
 }
 
 .sign_in_or_register h2 {
     margin-bottom: 30px;
 
+    font-size: 18px;
+    line-height: 20px;
+    color: #575153;
+    text-transform: uppercase;
 
+
+}
+
+.sign_in_or_register p {
+    font-size: 15px;
+    line-height: 22px;
+    color: #989898; 
 }
 
 .sign_in_or_register input:not([type="button"]) {
@@ -2194,12 +2210,25 @@ border-radius: 45px;
     width: 550px;
     padding: 15px 0 15px 10px;
     margin-bottom: 30px;
+    border: 1px solid #e7e7e7;
+
+    font-size: 15px;
+    line-height: 22px;
+    color: #989898;
+   
 }
 
-.sign_in,
+/* ЦВЕТ ШРИФТА ПЛЭЙСХОЛДЕРА */
+
+input::-webkit-input-placeholder { 
+    color:#989898; 
+}
+
+
+
 .register {
-    width: 550px;
-    
+    padding-left: 35px;
+    border-left: 1px solid #eeeeee;
 }
 
 
@@ -2219,11 +2248,15 @@ border-radius: 45px;
     ;
 }
 
-.sign_up_checkbox {
+.register .sign_up_checkbox {
     position: relative;
-    padding-left: 40px;
-    border: 1px solid yellow;
-}
+    padding: 5px 0px 5px 30px;
+   
+
+    font-size: 15px;
+    line-height: 22px;
+    color: #8e8c8c;
+ }
 
 .sign_up_checkbox::before {
     position: absolute;
@@ -2233,7 +2266,7 @@ border-radius: 45px;
     border: 1px solid #e7e7e7;
 
     left: 0;
-    top: 30%;
+    top: 10%;
 }
 
 input[type="checkbox"]:checked + .sign_up_checkbox::after {
@@ -2244,18 +2277,36 @@ input[type="checkbox"]:checked + .sign_up_checkbox::after {
     background-color: #e7e7e7;
     border: 1px solid #e7e7e7;
 
-    left: 1%;
-    top: 32%;
+    left: 3px;
+    top: 21%;
 }
 
 
-.sign_up_checkbox {
-    position: relative;
+.register_submit_policy_container,
+.sign_in_forgot_pass_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+p.privacy_policy {
+    margin-top: 5%;
 }
 
 
+.privacy_policy {
+    margin: 0;
+    padding: 0;
+    width: 230px;
+    text-align: right;
+    white-space: normal;
+}
 
-
+.privacy_policy a,
+.sign_in a {
+    color: #22cfcf;
+}
 
 
 
@@ -2263,6 +2314,7 @@ input[type="checkbox"]:checked + .sign_up_checkbox::after {
 .sign_in_or_register input[type="button"] {
     display: block;
     padding: 22px 32px;
+    margin-top: 30px;
     background-color: #ffffff;
     border-width: 0;
     border: 1px solid black;
