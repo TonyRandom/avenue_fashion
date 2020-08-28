@@ -180,6 +180,7 @@ padding: 0px;}
     padding-right: 135px;
     padding-left: 135px;
     
+    z-index: 10;
 }
 
 .main_navigation {
@@ -499,7 +500,7 @@ body .active_navigation {
     
     background-color: #ffffff;
     position: relative;
-    z-index: -2;
+    z-index: 1;
     
     padding-bottom: 60px;
     border-bottom: 1px solid #eeeeee;
@@ -530,7 +531,12 @@ body .active_navigation {
     border: 2px solid #454647;
     background-color: transparent;
 
-    z-index: 2;
+}
+
+.background_image_button:hover {
+    color: #ffffff;
+    background-color: #00c8c8;
+    border-color: #00c8c8;
 }
 
 .main_offers {
