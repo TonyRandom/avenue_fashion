@@ -688,7 +688,7 @@ body .active_navigation {
 } 
 
 .picture:hover:nth-child(n+4) {
-    transform:  translateY(150px);s
+    transform:  translateY(150px);
 }
 
 
