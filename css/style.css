@@ -818,7 +818,7 @@ body .active_navigation {
 .lookbook {
     position: relative;
     /* z-index: -999; */
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     background-color: #ffffff;
 
