@@ -269,7 +269,8 @@ body .active_navigation {
  
 } */
 
-.mens_dropdown_menu_show {
+
+/* .mens_dropdown_menu_show {
     width: 467px;
     height: 527px;
     box-sizing: border-box;
@@ -284,7 +285,7 @@ body .active_navigation {
     display: flex;
     flex-direction: column;
 }
-
+ */
 
 
 
@@ -349,7 +350,10 @@ body .active_navigation {
 }
 
 
-.womens_dropdown_menu_show {
+
+
+
+/* .womens_dropdown_menu_show {
     width: 467px;
     height: 527px;
     box-sizing: border-box;
@@ -363,7 +367,7 @@ body .active_navigation {
     top: 50px;
     display: flex;
     flex-direction: column;
-}
+} */
 
 
 .womens_dropdown_menu_container {
@@ -425,7 +429,23 @@ body .active_navigation {
     display: none;
 }
 
-.look_book_dropdown_menu_show {
+/* .look_book_dropdown_menu_show {
+    width: 467px;
+    height: 527px;
+    box-sizing: border-box;
+    padding: 35px 30px;
+
+    background-color: #ffffff;
+    box-shadow: 0px 17px 24px 0px rgba(0, 0, 0, 0.14);
+     
+    
+    position: absolute;
+    top: 50px;
+    display: flex;
+    flex-direction: column;
+} */
+
+.menu_show {
     width: 467px;
     height: 527px;
     box-sizing: border-box;
@@ -440,8 +460,6 @@ body .active_navigation {
     display: flex;
     flex-direction: column;
 }
-
-
 
 
 .womens_menu {
